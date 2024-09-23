@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  color: #fff;
+}
+
+/* heading  */
+
+.btnHover {
+  @apply hover:scale-x-105 hover:text-slate-400 transition-all;
+}
+.customContainer {
+  @apply container px-4 mx-auto;
+}
+
+.flexCenter {
+  @apply flex items-center justify-center;
+}
+
+.darkBtn {
+  @apply bg-primary px-2.5 py-1.5 rounded-xl z-20 btnHover text-white;
+}
+.lightBtn {
+  @apply bg-secondary px-2.5 py-1.5 rounded-xl z-20 btnHover text-primary shadow-md;
+}
+
+.redBtn {
+  @apply bg-red-300 text-red-700 shadow-md px-2.5 py-1.5 rounded-xl z-20 btnHover;
+}
