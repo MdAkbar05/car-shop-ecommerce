@@ -17,7 +17,10 @@ const Cars = () => {
   }, []);
 
   return (
-    <div className="customContainer bg-secondary text-black py-8 space-y-4">
+    <div
+      id="cars"
+      className="customContainer bg-secondary text-black py-8 space-y-4"
+    >
       {
         (status === "loading" && (
           <div className="flex justify-center items-center h-full">
